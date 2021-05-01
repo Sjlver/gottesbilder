@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import MemoryCard from '../components/memory_card'
 
 export default function Home() {
   return (
@@ -16,6 +17,8 @@ export default function Home() {
         <p class="text-center">
           Wie siehst <em>du</em> Gott?
         </p>
+
+        <MemoryCard></MemoryCard>
       </main>
     </div>
   )
