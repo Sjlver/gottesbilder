@@ -1,20 +1,19 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Gottesbilder</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
+      <main>
+        <h1 class="text-2xl font-bold text-center my-8">
           Gottesbilder
         </h1>
 
-        <p className={styles.description}>
+        <p class="text-center">
           Wie siehst <em>du</em> Gott?
         </p>
       </main>
