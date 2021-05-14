@@ -10,11 +10,11 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 class="text-2xl font-bold text-center my-8">
+        <h1 className="text-2xl font-bold text-center my-8">
           Gottesbilder
         </h1>
 
-        <p class="text-center">
+        <p className="text-center">
           Wie siehst <em>du</em> Gott?
         </p>
 
