@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import { MemoryCardState, MemoryCard } from '../components/memory_card'
+import { MemoryCardDefinition, MemoryCard } from '../components/memory_card'
 import { cards } from '../public/cards/cards'
 
-let gameCards: MemoryCardState[] = [];
+let gameCards: MemoryCardDefinition[] = [];
 
 export default function Home() {
   if (gameCards.length == 0) {
