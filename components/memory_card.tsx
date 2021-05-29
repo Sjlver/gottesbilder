@@ -30,13 +30,13 @@ export class MemoryCard extends React.Component<MemoryCardProps, {}> {
         } else if (this.props.card.side == "back") {
             return (
                 <div className="shadow-lg rounded-xl m-1 p-1 bg-white" onClick={this.props.onClick}>
-                    <img className="rounded-lg" src="farbtropfen.png" alt="" />
+                    <img className="rounded-lg" src="/gottesbilder/farbtropfen.png" alt="" />
                 </div>
             );
         } else {
             return (
                 <div className="invisible" onClick={this.props.onClick}>
-                    <img className="rounded-lg" src="farbtropfen.png" alt="" />
+                    <img className="rounded-lg" src="/gottesbilder/farbtropfen.png" alt="" />
                 </div>
             );
         }
@@ -44,6 +44,6 @@ export class MemoryCard extends React.Component<MemoryCardProps, {}> {
 
     // Returns the path to this card's picture, relative to the root of the app.
     private photo() {
-        return `cards/${cards[this.props.card.name]["photo"]}`;
+        return `/gottesbilder/cards/${cards[this.props.card.name]["photo"]}`;
     }
 };
