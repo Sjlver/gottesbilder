@@ -20,32 +20,40 @@ export class MemoryGame extends React.Component<{}, MemoryGameState> {
         this.mismatch = this.mismatch.bind(this);
 
         // DEBUG
-        //this.state = { cards: shuffleCards(), phase: "match", timeout: null, firstCard: 1, secondCard: 2 };
-        //this.state.cards[1].side = "front";
-        //this.state.cards[2].side = "front";
+        this.state = { cards: shuffleCards(), phase: "match", timeout: null, firstCard: 1, secondCard: 2 };
+        this.state.cards[1].side = "front";
+        this.state.cards[2].side = "front";
     }
 
     render() {
-        const cards = this.state.cards;
         console.log(`Rendering game. Phase is ${this.state.phase}.`);
 
         let matchPanel = <div className="row-start-1 col-start-1 hidden" />;
         if (this.state.phase == "match") {
+            const cardData = cards[this.state.cards[this.state.firstCard].name];
             matchPanel = (
-                <div className="row-start-1 col-start-1 grid items-center bg-white" onClick={this.match}>
+                <div className="row-start-1 col-start-1 grid items-center bg-white">
                     <div className="grid grid-cols-2 grid-rows-1 items-center">
-                        <MemoryCard card={this.state.cards[this.state.firstCard]} onClick={this.match}></MemoryCard>
-                        <MemoryCard card={this.state.cards[this.state.secondCard]} onClick={this.match}></MemoryCard>
+                        <MemoryCard card={this.state.cards[this.state.firstCard]} onClick={() => undefined}></MemoryCard>
+                        <MemoryCard card={this.state.cards[this.state.secondCard]} onClick={() => undefined}></MemoryCard>
                     </div>
-                    <div className="text-center">Erklaerung kommt hier.</div>
+                    <figure className="m-1 p-4">
+                        <blockquote className="mb-1" cite={cardData["link"]}>
+                            <p>{cardData["verse"]}</p>
+                        </blockquote>
+                        <figcaption className="text-right">
+                            <cite className="font-medium text-blue-400"><a href={cardData["link"]} target="_blank">{cardData["reference"]}, {cardData["translation"]}</a></cite>
+                        </figcaption>
+                    </figure>
+                    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold mx-auto py-2 px-4 rounded" onClick={this.match}>Weiterspielen</button>
                 </div>
             );
         }
 
         let endPanel = <div className="row-start-1 col-start-1 hidden" />;
         if (this.state.phase == "end") {
-            matchPanel = (
-                <div className="row-start-1 col-start-1 grid items-center bg-white" onClick={this.match}>
+            endPanel = (
+                <div className="row-start-1 col-start-1 grid items-center bg-white">
                     <div className="text-center">Du hast es geschafft!</div>
                 </div>
             );
@@ -55,9 +63,10 @@ export class MemoryGame extends React.Component<{}, MemoryGameState> {
         return (
             <div className="grid grid-cols-1 grid-rows-1 items-stretch">
                 <div className="row-start-1 col-start-1 grid grid-cols-3">
-                    {cards.map((c, i) => <MemoryCard key={i} card={c} onClick={() => this.cardClick(i)}></MemoryCard>)}
+                    {this.state.cards.map((c, i) => <MemoryCard key={i} card={c} onClick={() => this.cardClick(i)}></MemoryCard>)}
                 </div>
                 {matchPanel}
+                {endPanel}
             </div>
         );
     }
@@ -94,7 +103,7 @@ export class MemoryGame extends React.Component<{}, MemoryGameState> {
         } else if (this.state.phase == "mismatch") {
             this.mismatch();
         } else if (this.state.phase == "match") {
-            this.match();
+            // Do nothing. The "match" phase ends when its button is clicked.
         }
         console.log(`Clicked card #${cardIndex}`);
     }
