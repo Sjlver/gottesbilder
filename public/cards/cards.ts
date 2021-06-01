@@ -1,77 +1,102 @@
 export const cards = {
     "adler": {
-        "photo": "adler.jpg"
+        "photo": "adler.jpg",
+        "front": "Gott ist wie ein Adler"
     },
     "arzt": {
-        "photo": "arzt.jpg"
+        "photo": "arzt.jpg",
+        "front": "Gott ist wie ein Arzt"
     },
     "behueter": {
-        "photo": "behueter.jpg"
+        "photo": "behueter.jpg",
+        "front": "Gott ist mein Behüter"
     },
     "burg": {
-        "photo": "burg.jpg"
+        "photo": "burg.jpg",
+        "front": "Gott ist wie eine Burg"
     },
     "fels": {
-        "photo": "fels.jpg"
+        "photo": "fels.jpg",
+        "front": "Gott ist wie ein Fels"
     },
     "feuer": {
-        "photo": "feuer.jpg"
+        "photo": "feuer.jpg",
+        "front": "Gott ist wie ein Feuer"
     },
     "fluegel": {
-        "photo": "fluegel.jpg"
+        "photo": "fluegel.jpg",
+        "front": "Gott ist wie Flügel"
     },
     "freund": {
-        "photo": "freund.jpg"
+        "photo": "freund.jpg",
+        "front": "Gott ist wie eine Freundin"
     },
     "gaertner": {
-        "photo": "gaertner.jpg"
+        "photo": "gaertner.jpg",
+        "front": "Gott ist wie eine Gärtnerin"
     },
     "hand": {
-        "photo": "hand.jpg"
+        "photo": "hand.jpg",
+        "front": "Gott ist wie eine Hand"
     },
     "hebamme": {
-        "photo": "hebamme.jpg"
+        "photo": "hebamme.jpg",
+        "front": "Gott ist wie eine Hebamme"
     },
     "henne": {
-        "photo": "henne.jpg"
+        "photo": "henne.jpg",
+        "front": "Gott ist wie eine Henne"
     },
     "hirt": {
-        "photo": "hirt.jpg"
+        "photo": "hirt.jpg",
+        "front": "Gott ist wie ein Hirt"
     },
     "licht": {
-        "photo": "licht.jpg"
+        "photo": "licht.jpg",
+        "front": "Gott ist wie ein Licht"
     },
     "liebe": {
-        "photo": "liebe.jpg"
+        "photo": "liebe.jpg",
+        "front": "Gott ist wie die Liebe"
     },
     "loewe": {
-        "photo": "loewe.jpg"
+        "photo": "loewe.jpg",
+        "front": "Gott ist wie ein Löwe"
     },
     "mutter": {
-        "photo": "mutter.jpg"
+        "photo": "mutter.jpg",
+        "front": "Gott ist wie eine Mutter"
     },
     "quelle": {
-        "photo": "quelle.jpg"
+        "photo": "quelle.jpg",
+        "front": "Gott ist wie eine Quelle"
     },
     "retter": {
-        "photo": "retter.jpg"
+        "photo": "retter.jpg",
+        "front": "Gott ist wie ein Retter"
     },
     "richter": {
-        "photo": "richter.jpg"
+        "photo": "richter.jpg",
+        "front": "Gott ist wie eine Richterin"
     },
     "schoepfer": {
-        "photo": "schoepfer.jpg"
+        "photo": "schoepfer.jpg",
+        "front": "Gott ist der Schöpfer"
     },
     "sonne": {
-        "photo": "sonne.jpg"
+        "photo": "sonne.jpg",
+        "front": "Gott ist wie die Sonne"
     },
     "toepfer": {
-        "photo": "toepfer.jpg"
+        "photo": "toepfer.jpg",
+        "front": "Gott ist wie eine Töpferin"
     },
     "vater": {
-        "photo": "vater.jpg"
+        "photo": "vater.jpg",
+        "front": "Gott ist wie ein Vater"
     },
     "zelt": {
-        "photo": "zelt.jpg"
+        "photo": "zelt.jpg",
+        "front": "Gott ist wie ein Zelt"
     }
 }

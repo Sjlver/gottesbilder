@@ -23,7 +23,7 @@ export class MemoryCard extends React.Component<MemoryCardProps, {}> {
                             row-start-1 col-start-1 grid items-center rounded-lg bg-white
                             ${this.props.card.state == "photo" ? "hidden" : ""}
                     `}>
-                        <div className="text-center">Ich bin ein {this.props.card.name}</div>
+                        <div className="text-center">{cards[this.props.card.name]["front"]}</div>
                     </div>
                 </div>
             );
