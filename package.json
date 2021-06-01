@@ -1,10 +1,10 @@
 {
   "name": "gottesbilder",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && rm -rf docs/ && next export -o docs",
+    "build": "rm -rf .next/ docs/ && next build && next export -o docs",
     "start": "next start"
   },
   "dependencies": {

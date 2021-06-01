@@ -20,9 +20,9 @@ export class MemoryGame extends React.Component<{}, MemoryGameState> {
         this.mismatch = this.mismatch.bind(this);
 
         // DEBUG
-        this.state = { cards: shuffleCards(), phase: "match", timeout: null, firstCard: 1, secondCard: 2 };
-        this.state.cards[1].side = "front";
-        this.state.cards[2].side = "front";
+        //this.state = { cards: shuffleCards(), phase: "match", timeout: null, firstCard: 1, secondCard: 2 };
+        //this.state.cards[1].side = "front";
+        //this.state.cards[2].side = "front";
     }
 
     render() {
