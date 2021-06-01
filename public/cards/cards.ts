@@ -98,7 +98,7 @@ export const cards = {
     "hirt": {
         "photo": "hirt.jpg",
         "front": "Gott ist wie ein Hirt",
-        "verse": "Ein Psalm Davids. Der HERR ist mein Hirt, mir mangelt nichts, er weidet mich auf grünen Auen. Zur Ruhe am Wasser führt er mich.",
+        "verse": "Der HERR ist mein Hirt, mir mangelt nichts, er weidet mich auf grünen Auen. Zur Ruhe am Wasser führt er mich.",
         "translation": "Zürcher Bibel",
         "link": "https://www.bibleserver.com/ZB/Psalm23,1-2",
         "reference": "Psalm 23,1-2"
