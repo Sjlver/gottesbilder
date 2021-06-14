@@ -6,7 +6,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Gottesbilder</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/gottesbilder/favicon.ico" />
       </Head>
 
       <main>
@@ -14,8 +14,8 @@ export default function Home() {
           Gottesbilder
         </h1>
 
-        <div className="max-w-screen-sm mx-auto">
-          <MemoryGame />
+        <div className="grid items-center bg-white">
+          <a href="/gottesbilder/game" className="bg-blue-500 hover:bg-blue-700 text-white font-bold mx-auto py-2 px-4 rounded">Spielen</a>
         </div>
       </main>
     </div>

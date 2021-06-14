@@ -18,16 +18,9 @@ export class MemoryGame extends React.Component<{}, MemoryGameState> {
 
         this.match = this.match.bind(this);
         this.mismatch = this.mismatch.bind(this);
-
-        // DEBUG
-        //this.state = { cards: shuffleCards(), phase: "match", timeout: null, firstCard: 1, secondCard: 2 };
-        //this.state.cards[1].side = "front";
-        //this.state.cards[2].side = "front";
     }
 
     render() {
-        console.log(`Rendering game. Phase is ${this.state.phase}.`);
-
         let matchPanel = <div className="row-start-1 col-start-1 hidden" />;
         if (this.state.phase == "match") {
             const cardData = cards[this.state.cards[this.state.firstCard].name];
@@ -54,7 +47,12 @@ export class MemoryGame extends React.Component<{}, MemoryGameState> {
         if (this.state.phase == "end") {
             endPanel = (
                 <div className="row-start-1 col-start-1 grid items-center bg-white">
-                    <div className="text-center">Du hast es geschafft!</div>
+                    <div className="space-y-8">
+                        <p className="text-center text-lg">Du hast es geschafft!</p>
+                        <p className="text-center">
+                            <a href="/gottesbilder/game" className="bg-blue-500 hover:bg-blue-700 text-white font-bold mx-auto py-2 px-4 rounded">Nochmal</a>
+                        </p>
+                    </div>
                 </div>
             );
         }
@@ -105,7 +103,6 @@ export class MemoryGame extends React.Component<{}, MemoryGameState> {
         } else if (this.state.phase == "match") {
             // Do nothing. The "match" phase ends when its button is clicked.
         }
-        console.log(`Clicked card #${cardIndex}`);
     }
 
     mismatch() {
@@ -122,7 +119,6 @@ export class MemoryGame extends React.Component<{}, MemoryGameState> {
 
     match() {
         if (this.state.phase != "match") return;
-        console.log("Hello from match.");
 
         const updatedCards = this.state.cards.slice();
         updatedCards[this.state.firstCard].side = "found";
