@@ -14,7 +14,9 @@ export default function Home() {
           Gottesbilder
         </h1>
 
-        <MemoryGame />
+        <div className="max-w-screen-sm mx-auto">
+          <MemoryGame />
+        </div>
       </main>
     </div>
   );
