@@ -10,7 +10,7 @@ export default function Home() {
       </Head>
 
       <main className="bg-center bg-cover" style={{backgroundImage: "url(/gottesbilder/index_background_licht.jpg)"}}>
-        <div className="max-w-screen-sm h-screen mx-auto flex flex-col space-y-8 p-8">
+        <div className="max-w-md h-screen mx-auto flex flex-col space-y-8 p-8">
           <div className="flex-1 flex flex-col space-y-8 justify-center">
             <h1 className="text-6xl font-extrabold text-white text-opacity-80 text-center uppercase">
               Gottes<br />bilder

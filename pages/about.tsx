@@ -12,7 +12,7 @@ export default function About() {
       </Head>
 
       <main className="bg-center bg-cover" style={{backgroundImage: "url(/gottesbilder/index_background_licht.jpg)"}}>
-        <div className="max-w-screen-sm h-screen mx-auto bg-white bg-opacity-90 flex flex-col justify-center px-1">
+        <div className="max-w-md h-screen mx-auto bg-white bg-opacity-90 flex flex-col justify-center px-1">
           <div className="overflow-auto space-y-2">
             <p>Ein Spiel, das einen klitzekleinen Ausschnitt davon zeigt, wie vielseitig Gott sein kann.</p>
             <p>Design: <a href="https://www.refbejuso.ch/strukturen/katechetik/team/katharina-wagner/" target="_blank" className="font-medium text-blue-400">Katharina Wagner</a></p>

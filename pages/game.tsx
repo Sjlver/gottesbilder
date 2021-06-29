@@ -12,7 +12,7 @@ export default function Game() {
       </Head>
 
       <main className="bg-center bg-cover" style={{backgroundImage: "url(/gottesbilder/index_background_licht.jpg)"}}>
-        <div className="max-w-screen-sm h-screen mx-auto bg-white bg-opacity-90 flex flex-col justify-center px-1">
+        <div className="max-w-md h-screen mx-auto bg-white bg-opacity-90 flex flex-col justify-center px-1">
           <MemoryGame />
 
           <div className="my-8 font-medium text-lg">
