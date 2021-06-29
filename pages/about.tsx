@@ -17,12 +17,14 @@ export default function About() {
             <p>Ein Spiel, das einen klitzekleinen Ausschnitt davon zeigt, wie vielseitig Gott sein kann.</p>
             <p>Design: <a href="https://www.refbejuso.ch/strukturen/katechetik/team/katharina-wagner/" target="_blank" className="font-medium text-blue-400">Katharina Wagner</a></p>
             <p>Implementation: <a href="https://blog.purpureus.net/about/" target="_blank" className="font-medium text-blue-400">Jonas Wagner</a></p>
+            <p>Projekt: <a href="https://farbenspiel.family/" target="_blank" className="font-medium text-blue-400">farbenspiel.family</a></p>
             <details>
-              <summary>Bilder</summary>
+              <summary>Bilder:</summary>
               <ul>
                 {Object.values(cards).map(CreditsLink)}
               </ul>
             </details>
+            <p>Texte: Die Zitate aus der Zürcher Bibel 2007 werden mit freundlicher Genehmigung des Theologischen Verlags Zürich verwendet.</p>
           </div>
 
           <div className="my-8 font-medium text-lg">

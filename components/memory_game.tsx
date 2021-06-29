@@ -50,7 +50,7 @@ export class MemoryGame extends React.Component<{}, MemoryGameState> {
                     <div className="space-y-8">
                         <p className="text-center text-lg">Du hast es geschafft!</p>
                         <p className="text-center">
-                            <a href="/gottesbilder/game" className="bg-blue-500 hover:bg-blue-700 text-white font-bold mx-auto py-2 px-4 rounded">Nochmal</a>
+                            <a href="/gottesbilder/game" className="bg-blue-500 hover:bg-blue-700 text-white font-bold mx-auto py-2 px-4 rounded">Noch ein Spiel spielen</a>
                         </p>
                     </div>
                 </div>
