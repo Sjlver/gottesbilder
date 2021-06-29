@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react'
 
 import { MemoryCardDefinition, MemoryCard } from '../components/memory_card'
@@ -14,10 +15,14 @@ type MemoryGameState = {
 export class MemoryGame extends React.Component<{}, MemoryGameState> {
     constructor(props: {}) {
         super(props);
-        this.state = { cards: shuffleCards(), phase: "openFirst", timeout: null, firstCard: null, secondCard: null };
+        this.state = this.newGame();
 
         this.match = this.match.bind(this);
         this.mismatch = this.mismatch.bind(this);
+    }
+
+    newGame(): MemoryGameState {
+        return { cards: shuffleCards(), phase: "openFirst", timeout: null, firstCard: null, secondCard: null };
     }
 
     render() {
@@ -50,7 +55,9 @@ export class MemoryGame extends React.Component<{}, MemoryGameState> {
                     <div className="space-y-8">
                         <p className="text-center text-lg">Du hast es geschafft!</p>
                         <p className="text-center">
-                            <a href="/gottesbilder/game" className="bg-blue-500 hover:bg-blue-700 text-white font-bold mx-auto py-2 px-4 rounded">Noch ein Spiel spielen</a>
+                            <button
+                                className="bg-blue-500 hover:bg-blue-700 text-white font-bold mx-auto py-2 px-4 rounded"
+                                onClick={() => this.setState(this.newGame())}>Noch ein Spiel spielen</button>
                         </p>
                     </div>
                 </div>

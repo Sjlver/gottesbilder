@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { MemoryGame } from '../components/memory_game'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -17,12 +17,16 @@ export default function Home() {
             </h1>
 
             <p className="text-center text-2xl">
-              <a href="/gottesbilder/game" className="bg-blue-500 hover:bg-blue-700 text-white font-bold mx-auto py-2 px-4 rounded">Spielen</a>
+              <Link href="/game">
+                <a className="bg-blue-500 hover:bg-blue-700 text-white font-bold mx-auto py-2 px-4 rounded">Spielen</a>
+              </Link>
             </p>
             </div>
           <div className="flex-none">
             <p className="text-center">
-              <a href="/gottesbilder/about" className="bg-blue-500 hover:bg-blue-700 text-white font-bold mx-auto py-2 px-4 rounded">Impressum</a>
+              <Link href="/about">
+                <a className="bg-blue-500 hover:bg-blue-700 text-white font-bold mx-auto py-2 px-4 rounded">Impressum</a>
+              </Link>
             </p>
           </div>
         </div>

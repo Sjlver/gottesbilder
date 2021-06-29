@@ -2,6 +2,7 @@ import React, { SyntheticEvent } from 'react'
 
 import Head from 'next/head'
 import { cards } from '../public/cards/cards'
+import Link from 'next/link';
 
 export default function About() {
   return (
@@ -29,7 +30,9 @@ export default function About() {
 
           <div className="my-8 font-medium text-lg">
             <hr />
-            <div><a href="/gottesbilder" className="text-blue-400">« Zurück</a> zum Menu</div>
+            <div>
+              <Link href="/"><a className="text-blue-400" onClick={() => window.history.back()}>« Zurück</a></Link> zum Menu
+            </div>
           </div>
         </div>
       </main>
